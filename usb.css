@@ -1,0 +1,97 @@
+h1{
+    text-align: center;
+}
+body{
+    background-color: #060606;
+    color:white;
+}
+.itemBox{
+    background-color: white;
+    padding-bottom: 30px;
+
+    margin: 0px auto;
+    width: 40%;
+    text-align: center;
+    border-style: outset;
+    border-width: 5px;
+    color:black;
+}
+.itemBoxText{
+    vertical-align: middle;
+    color:black;
+    padding:10px;
+    margin-top:-2;
+    border: inset;
+    border-color: #c0c0c0;
+}
+
+.readButton{
+    padding:10px;
+    background-color: aquamarine;
+    border-color: aqua;
+    border-style: inset;
+}
+.readButton:hover{
+    background-color: aqua;
+    border-color: aquamarine;
+    border-style: inset;
+}
+
+.downloadButton{
+    background-color: black;
+    text-decoration: None;
+    color: white;
+    padding:10px;
+    border-style: inset;
+    border-color: white;
+}
+.downloadButton:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.errorBar{
+    background-color: #d32f2f;
+    color:white;
+    width:100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar{
+    background-color: #202526;
+    border-style: inset;
+    border-color: #90cfd4;
+    text-decoration: None;
+    color:white;
+    float:left;
+    padding:10px;
+    margin-top: -10px;
+    margin-right: 5px;
+}
+.navbar:hover{
+    background-color: #c2c2c2;
+    color:black;
+}
+.nav{
+    width: 100%;
+    background-color: #1e6e75;
+    padding: 15px;
+}
+
+.fileForm{
+    background-color: aquamarine;
+    text-decoration: None;
+    color: black;
+    padding:10px;
+    align-items: center;
+    border-color: aqua;
+    border-style: inset;
+}
+.fileForm:hover{
+    background-color: aqua;
+    border-color: aquamarine;
+}
