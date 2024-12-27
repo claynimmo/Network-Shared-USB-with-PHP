@@ -169,18 +169,18 @@ function CheckExtension($extension, $filePath,$file,$folderIndex){
 
 function ReadPath($path,$folderIndex){
     $folderIndex += 1;
-    if(is_readable($path)){
-        $files = scandir($path);
+    if(!is_readable($path)){return;}
     
-        foreach($files as $file){
-            // Skip the current and parent directory entries
-            if($file !== "." && $file !== ".."){
-                $fullPath = $path . $file;
-                $fileInfo = pathinfo($fullPath);
-                if (isset($fileInfo['extension'])) {
-                    $fileExtension = $fileInfo['extension'];
-                    CheckExtension($fileExtension,$fullPath,$file,$folderIndex);
-                }
+    $files = scandir($path);
+
+    foreach($files as $file){
+        // Skip the current and parent directory entries
+        if($file !== "." && $file !== ".."){
+            $fullPath = $path . $file;
+            $fileInfo = pathinfo($fullPath);
+            if (isset($fileInfo['extension'])) {
+                $fileExtension = $fileInfo['extension'];
+                CheckExtension($fileExtension,$fullPath,$file,$folderIndex);
             }
         }
     }
